@@ -18,10 +18,6 @@ sv_mincmdrate 128
 sv_maxupdaterate 128
 sv_minupdaterate 128" >> cfg/server.cfg
   
-  #Set Sourcemod admin
-  mkdir -p /steam/plugins/addons/sourcemod/configs/
-  echo $ADMIN"      99:z" >> /steam/plugins/addons/sourcemod/configs/admins_simple.ini
-  
   #SM und MM
   echo "Installing Sourcemod and Metamod"
   curl -sqL "https://mms.alliedmods.net/mmsdrop/1.10/mmsource-1.10.7-git971-linux.tar.gz"  | tar xz -C /steam/plugins/
@@ -74,7 +70,9 @@ sv_minupdaterate 128" >> cfg/server.cfg
 }" >> gamemodes_server.txt
   chmod 755 gamemodes_server.txt
   
-  
+  #Set Sourcemod admin
+  mkdir -p /steam/plugins/addons/sourcemod/configs/
+  echo $ADMIN"      99:z" >> /steam/plugins/addons/sourcemod/configs/admins_simple.ini
   
   
   chmod -R 777 /steam/plugins
