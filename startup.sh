@@ -19,6 +19,7 @@ sv_maxupdaterate 128
 sv_minupdaterate 128" >> cfg/server.cfg
   
   #Set Sourcemod admin
+  mkdir -p /steam/plugins/addons/sourcemod/configs/
   echo $ADMIN"      99:z" >> /steam/plugins/addons/sourcemod/configs/admins_simple.ini
   
   #SM und MM
