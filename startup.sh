@@ -36,7 +36,7 @@ sv_minupdaterate 128" >> cfg/server.cfg
   
   #Database configuration
   echo "Installing Database configuration"
-  wget -O /steam/plugins/addons/sourcemod/configs/databases.cfg https://raw.githubusercontent.com/greinet/csgosurf/master/databases.cfg
+  wget -O /steam/plugins/addons/sourcemod/configs/databases.cfg https://raw.githubusercontent.com/greinet/csgosurf-cksurf/master/databases.cfg
   
   #cksurf
   echo "Installing cksurf"
