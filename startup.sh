@@ -44,9 +44,10 @@ sv_minupdaterate 128" >> cfg/server.cfg
   echo "wget done"
   unzip cksurf.zip
   echo "unzip done"
-  cp -r "ckSurf-1.18kd-Release-master/Without Discord/*" .
+  cp -r ckSurf-1.18kd-Release-master/Without\ Discord/* .
   echo "copy done"
   rm -rf ckSurf-1.18kd-Release-master
+  rm -rf ck\ doc\ files/
   
   #Downloading Maps
   wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=0B-gvqLVXDjSVX3ZnLXJ4YkdJX2c' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=0B-gvqLVXDjSVX3ZnLXJ4YkdJX2c" -O tier-1.tar.gz && rm -rf /tmp/cookies.txt && tar -xzvf tier-1.tar.gz && bunzip2 tier_1/* && cp tier_1/* maps && rm tier-1.tar.gz
